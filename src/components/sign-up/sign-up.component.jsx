@@ -32,7 +32,7 @@ class SignUp extends React.Component {
             await createUserProfileDocument(user, { displayName: this.state.displayName });
         }
         catch(err) {
-            console.log(err.message);
+            console.log(err);
         }
 
         this.setState({
